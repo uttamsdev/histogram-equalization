@@ -11,8 +11,6 @@ pdf.reduce(function (a, b, i) {
   return (cdf[i] = a + b);
 }, 0);
 
-// console.log(cdf);
-
 let newCdf = [];
 for (c of cdf) {
   newCdf.push(c * (grayLevels.length - 1));
